@@ -5,10 +5,10 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # jar file copy from target folder
-COPY target/*.jar app.jar
+COPY target/*.jar Check-1.0-SNAPSHOT.jar
 
 # expose port (Render auto PORT use করে)
 EXPOSE 8080
 
 # run jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "Check-1.0-SNAPSHOT.jar"]
