@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/*.jar Check-1.0-SNAPSHOT.jar
 
 # expose port (Render auto PORT use করে)
-EXPOSE 8080
+
 
 # run jar
 ENTRYPOINT ["java", "-jar", "Check-1.0-SNAPSHOT.jar"]
